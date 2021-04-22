@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-22T15:30:55.607Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="nzLzzI1tkoQkXriyKEao" version="14.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-22T15:32:26.620Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="qgvUDBNK_325OT7jzBex" version="14.6.5" type="github">
   <diagram id="dPgERlTEOkM_cLvrWbXs" name="Page-1">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -67,6 +67,19 @@
         </mxCell>
         <mxCell id="ohv629lmskZEYgDHKCUt-6" value="XxlJobTrigger" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="530" y="80" width="130" height="2290" as="geometry" />
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-111" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=14;" vertex="1" parent="ohv629lmskZEYgDHKCUt-6">
+          <mxGeometry x="55" y="1470" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-112" value="&lt;pre style=&quot;font-family: &amp;#34;courier new&amp;#34; , monospace ; font-size: 10.5pt&quot;&gt;&lt;span style=&quot;font-style: italic ; background-color: rgb(255 , 255 , 255)&quot;&gt;runExecutor&lt;/span&gt;&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;fontSize=14;exitX=0.5;exitY=0.633;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="ohv629lmskZEYgDHKCUt-111" parent="ohv629lmskZEYgDHKCUt-6" source="ohv629lmskZEYgDHKCUt-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" y="1450" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="65" y="1430" />
+              <mxPoint x="90" y="1430" />
+              <mxPoint x="90" y="1470" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="ohv629lmskZEYgDHKCUt-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-2" target="ohv629lmskZEYgDHKCUt-2">
           <mxGeometry relative="1" as="geometry">
