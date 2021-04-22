@@ -1,1 +1,278 @@
-<mxfile host="app.diagrams.net" modified="2021-04-22T14:11:15.469Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" version="14.6.5" etag="FOeq9m7-CZbBM6tjoA0U" type="github"><diagram id="dPgERlTEOkM_cLvrWbXs">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-04-22T15:30:55.607Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="nzLzzI1tkoQkXriyKEao" version="14.6.5" type="github">
+  <diagram id="dPgERlTEOkM_cLvrWbXs" name="Page-1">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ohv629lmskZEYgDHKCUt-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-1" target="ohv629lmskZEYgDHKCUt-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="200" />
+              <mxPoint x="310" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-4" value="trigger" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="ohv629lmskZEYgDHKCUt-3">
+          <mxGeometry x="-0.1773" y="1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-1" value="JobInfoController" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="150" y="80" width="100" height="1570" as="geometry" />
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-2" value="JobTriggerPoolHelper" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=14;size=40;" vertex="1" parent="1">
+          <mxGeometry x="320" y="80" width="140" height="1560" as="geometry" />
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-5" value="传递启动方式,jobId,重试次数,客户端地址" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="240" y="220" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-6" target="ohv629lmskZEYgDHKCUt-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="920" />
+              <mxPoint x="720" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-43" value="processTrigger" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="ohv629lmskZEYgDHKCUt-41">
+          <mxGeometry x="0.8429" y="-1" relative="1" as="geometry">
+            <mxPoint x="80" y="31" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-6" target="ohv629lmskZEYgDHKCUt-44">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="1000" />
+              <mxPoint x="960" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-46" value="匹配阻塞处理策略" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="ohv629lmskZEYgDHKCUt-45">
+          <mxGeometry x="-0.0924" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-6" target="ohv629lmskZEYgDHKCUt-49">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="1160" />
+              <mxPoint x="970" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-52" value="获取路由策略" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="ohv629lmskZEYgDHKCUt-50">
+          <mxGeometry x="-0.078" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-6" value="XxlJobTrigger" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="530" y="80" width="130" height="2290" as="geometry" />
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-2" target="ohv629lmskZEYgDHKCUt-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="340" as="sourcePoint" />
+            <mxPoint x="640" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="510" y="280" />
+              <mxPoint x="510" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-23" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;#34;courier new&amp;#34; , monospace ; font-size: 10.5pt&quot;&gt;&lt;br&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="ohv629lmskZEYgDHKCUt-22">
+          <mxGeometry x="-0.1773" y="1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-24" value="addTrigger" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="ohv629lmskZEYgDHKCUt-22">
+          <mxGeometry x="-0.5517" y="-4" relative="1" as="geometry">
+            <mxPoint x="32" y="26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-2" target="ohv629lmskZEYgDHKCUt-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="419.5" y="440" as="sourcePoint" />
+            <mxPoint x="600" y="440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="510" y="440" />
+              <mxPoint x="510" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-26" value="线程池处理" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="ohv629lmskZEYgDHKCUt-25">
+          <mxGeometry x="-0.1773" y="1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-27" target="ohv629lmskZEYgDHKCUt-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="750" y="600" />
+              <mxPoint x="750" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-31" value="返回对应job信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="ohv629lmskZEYgDHKCUt-30">
+          <mxGeometry x="0.2227" y="4" relative="1" as="geometry">
+            <mxPoint x="15" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-27" value="XxlJobInfoDao" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="760" y="80" width="140" height="1580" as="geometry" />
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-6" target="ohv629lmskZEYgDHKCUt-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="500" as="sourcePoint" />
+            <mxPoint x="820" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="740" y="520" />
+              <mxPoint x="740" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-29" value="从数据库获取任务详情信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="ohv629lmskZEYgDHKCUt-28">
+          <mxGeometry x="-0.1773" y="1" relative="1" as="geometry">
+            <mxPoint x="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-32" value="XxlJobGroupDao" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="950" y="80" width="130" height="1590" as="geometry" />
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-32" target="ohv629lmskZEYgDHKCUt-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="760" as="sourcePoint" />
+            <mxPoint x="900" y="750" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="850" y="760" />
+              <mxPoint x="850" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-34" value="返回job分组信息,&lt;span style=&quot;background-color: rgb(248 , 249 , 250)&quot;&gt;包含执行器地址列表&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="ohv629lmskZEYgDHKCUt-33">
+          <mxGeometry x="0.2227" y="4" relative="1" as="geometry">
+            <mxPoint x="32" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-6" target="ohv629lmskZEYgDHKCUt-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="650" as="sourcePoint" />
+            <mxPoint x="1040" y="650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="910" y="680" />
+              <mxPoint x="910" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-38" value="获取job分组信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="ohv629lmskZEYgDHKCUt-36">
+          <mxGeometry x="-0.1227" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-44" target="ohv629lmskZEYgDHKCUt-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="1080" />
+              <mxPoint x="970" y="1080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-48" value="返回阻塞处理策略" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="ohv629lmskZEYgDHKCUt-47">
+          <mxGeometry x="0.047" y="2" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-44" value="ExecutorBlockStrategyEnum" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="80" width="110" height="1610" as="geometry" />
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-49" target="ohv629lmskZEYgDHKCUt-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1230" y="1240" />
+              <mxPoint x="1230" y="1240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-53" value="&lt;br&gt;&lt;br&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 14px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(255 , 255 , 255) ; display: inline ; float: none&quot;&gt;返回路由策略&lt;/span&gt;&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="ohv629lmskZEYgDHKCUt-51">
+          <mxGeometry x="0.0275" y="-3" relative="1" as="geometry">
+            <mxPoint x="-1" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-49" value="&lt;pre style=&quot;font-family: &amp;#34;courier new&amp;#34; , monospace ; font-size: 10.5pt&quot;&gt;&lt;pre style=&quot;font-family: &amp;#34;courier new&amp;#34; , monospace ; font-size: 10.5pt&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;ExecutorRouteStrategyEnum&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="80" width="100" height="1610" as="geometry" />
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-54" value="&lt;pre&gt;&lt;pre&gt;&lt;font face=&quot;courier new, monospace&quot;&gt;XxlJobLogDao&lt;span style=&quot;font-size: 10.5pt&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="80" width="110" height="1620" as="geometry" />
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-6" target="ohv629lmskZEYgDHKCUt-54">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="639.5" y="1170" as="sourcePoint" />
+            <mxPoint x="1549.5" y="1170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1220" y="1320" />
+              <mxPoint x="1220" y="1320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-56" value="保存执行日志" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="ohv629lmskZEYgDHKCUt-55">
+          <mxGeometry x="-0.078" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-57" value="&lt;pre&gt;&lt;pre&gt;&lt;font face=&quot;courier new, monospace&quot;&gt;ExecutorRouter&lt;span style=&quot;font-size: 10.5pt&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1790" y="80" width="100" height="1610" as="geometry" />
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-6" target="ohv629lmskZEYgDHKCUt-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="639.5" y="1400" as="sourcePoint" />
+            <mxPoint x="1549.5" y="1400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1410" y="1400" />
+              <mxPoint x="1410" y="1400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-59" value="路由寻址" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="ohv629lmskZEYgDHKCUt-58">
+          <mxGeometry x="-0.078" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-57" target="ohv629lmskZEYgDHKCUt-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1549.5" y="1250" as="sourcePoint" />
+            <mxPoint x="639.5" y="1250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1290" y="1480" />
+              <mxPoint x="1290" y="1480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-61" value="返回路由的触发器地址" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="ohv629lmskZEYgDHKCUt-60">
+          <mxGeometry x="0.0275" y="-3" relative="1" as="geometry">
+            <mxPoint x="-1" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-70" value="&lt;pre&gt;&lt;pre&gt;&lt;font face=&quot;courier new, monospace&quot;&gt;XxlJobScheduler&lt;span style=&quot;font-size: 10.5pt&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="80" width="90" height="2030" as="geometry" />
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-73" value="&lt;pre&gt;&lt;pre&gt;&lt;font face=&quot;courier new, monospace&quot;&gt;ExecutorBiz&lt;span style=&quot;font-size: 10.5pt&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="2140" y="80" width="90" height="2450" as="geometry" />
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-80" value="通过路由地址,获取业务执行器" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;fontSize=14;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-6" target="ohv629lmskZEYgDHKCUt-70">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="595" y="1640" as="sourcePoint" />
+            <mxPoint x="650" y="2010" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1300" y="1640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohv629lmskZEYgDHKCUt-104" value="return&amp;nbsp;&lt;span style=&quot;font-size: 10.5pt ; font-family: &amp;#34;courier new&amp;#34; , monospace&quot;&gt;ExecutorBiz&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;fontSize=14;entryX=0.462;entryY=0.729;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ohv629lmskZEYgDHKCUt-73" target="ohv629lmskZEYgDHKCUt-6">
+          <mxGeometry x="0.1543" relative="1" as="geometry">
+            <mxPoint x="680" y="1750" as="sourcePoint" />
+            <mxPoint x="600" y="1750" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
