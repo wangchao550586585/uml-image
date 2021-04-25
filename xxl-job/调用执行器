@@ -1,1 +1,258 @@
-<mxfile host="app.diagrams.net" modified="2021-04-23T12:08:22.712Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" version="14.6.5" etag="aEx9Zhi8gFtRkc3_gi-V" type="github"><diagram id="0cgJatRhZ-EVKrP__ub_">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-04-25T15:11:13.377Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="Iy8cDcDDXvcPEs2O-WJa" version="14.6.5" type="github">
+  <diagram id="0cgJatRhZ-EVKrP__ub_" name="Page-1">
+    <mxGraphModel dx="1673" dy="934" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-1" value="EmbedHttpServerHandler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="130" height="1600" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-3" value="异步线程池处理" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;" edge="1" parent="_M9FTq-tC0Zpsm8EneUu-1" target="_M9FTq-tC0Zpsm8EneUu-2">
+          <mxGeometry x="0.0619" y="10" width="60" relative="1" as="geometry">
+            <mxPoint x="50" y="80" as="sourcePoint" />
+            <mxPoint x="110" y="80" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-2" value="ThreadPoolExecutor" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="40" width="90" height="1610" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-8" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-2">
+          <mxGeometry x="40" y="170" width="10" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-9" value="process执行" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="_M9FTq-tC0Zpsm8EneUu-8" parent="_M9FTq-tC0Zpsm8EneUu-2" source="_M9FTq-tC0Zpsm8EneUu-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="45" y="160" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="110" y="110" />
+              <mxPoint x="110" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-13" value="解析成json数据,执行业务执行器" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="_M9FTq-tC0Zpsm8EneUu-2" target="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="240" as="sourcePoint" />
+            <mxPoint x="130" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-59" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="_M9FTq-tC0Zpsm8EneUu-2" source="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="1400" as="sourcePoint" />
+            <mxPoint x="40" y="1400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="1400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-60" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-2">
+          <mxGeometry x="40" y="1500" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-61" value="结果转成json,设置长连接,并刷入channel" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="_M9FTq-tC0Zpsm8EneUu-60" parent="_M9FTq-tC0Zpsm8EneUu-2" source="_M9FTq-tC0Zpsm8EneUu-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="1480" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="130" y="1440" />
+              <mxPoint x="130" y="1500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-10" value="ExecutorBiz" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="40" width="90" height="1630" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-41" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry x="40" y="740" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-42" value="针对不同的运行模式不同的处理" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="_M9FTq-tC0Zpsm8EneUu-41" parent="_M9FTq-tC0Zpsm8EneUu-10" source="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="720" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="110" y="670" />
+              <mxPoint x="110" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-49" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry x="40" y="1020" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-50" value="针对不同阻塞策略处理" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="_M9FTq-tC0Zpsm8EneUu-49" parent="_M9FTq-tC0Zpsm8EneUu-10" source="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="1000" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="100" y="970" />
+              <mxPoint x="100" y="1020" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-14" value="XxlJobExecutor" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="40" width="100" height="2730" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-36" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-14">
+          <mxGeometry x="40" y="290" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-53" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-14">
+          <mxGeometry x="40" y="1129" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-56" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-14">
+          <mxGeometry x="40" y="1280" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-17" value="JobThread" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="690" y="40" width="90" height="2870" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-33" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-17">
+          <mxGeometry x="40" y="420" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-62" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-17">
+          <mxGeometry x="40" y="1440" width="10" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-63" value="run" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="_M9FTq-tC0Zpsm8EneUu-62" parent="_M9FTq-tC0Zpsm8EneUu-17" source="_M9FTq-tC0Zpsm8EneUu-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="1409" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="100" y="1409" />
+              <mxPoint x="100" y="1440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-66" value="执行初始化任务" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;" edge="1" parent="_M9FTq-tC0Zpsm8EneUu-17" target="_M9FTq-tC0Zpsm8EneUu-64">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="50" y="1490" as="sourcePoint" />
+            <mxPoint x="110" y="1490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-19" value="GlueTypeEnum" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="40" width="90" height="1610" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-26" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-19">
+          <mxGeometry x="40" y="545" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-27" value="获取任务运行模式" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="_M9FTq-tC0Zpsm8EneUu-26" parent="1" source="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="520" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-28" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="_M9FTq-tC0Zpsm8EneUu-26" parent="1" target="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="596" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-34" value="获取作业处理器" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="_M9FTq-tC0Zpsm8EneUu-33" parent="1" source="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="470" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-35" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="_M9FTq-tC0Zpsm8EneUu-33" parent="1" target="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="546" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-37" value="获取job绑定线程" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="_M9FTq-tC0Zpsm8EneUu-36" parent="1" source="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-38" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="_M9FTq-tC0Zpsm8EneUu-36" parent="1" target="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="356" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-43" value="ExecutorBlockStrategyEnum" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="970" y="40" width="90" height="1610" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-46" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-43">
+          <mxGeometry x="40" y="830" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-47" value="获取任务阻塞策略" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="_M9FTq-tC0Zpsm8EneUu-46" parent="1" source="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940" y="880" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-48" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="_M9FTq-tC0Zpsm8EneUu-46" parent="1" target="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940" y="956" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-54" value="绑定作业到具体线程,并且启动" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="_M9FTq-tC0Zpsm8EneUu-53" parent="1" source="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="1210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-55" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="_M9FTq-tC0Zpsm8EneUu-53" parent="1" target="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="1286" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-57" value="任务丢入线程处理,并返回成功" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="_M9FTq-tC0Zpsm8EneUu-56" parent="1" source="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="1320" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-58" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="_M9FTq-tC0Zpsm8EneUu-56" parent="1" target="_M9FTq-tC0Zpsm8EneUu-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="1396" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-64" value="IJobHandler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="40" width="90" height="2250" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-77" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-64">
+          <mxGeometry x="40" y="1780" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-80" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-64">
+          <mxGeometry x="40" y="2010" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-67" value="LinkedBlockingQueue" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="40" width="90" height="2470" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-69" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-67">
+          <mxGeometry x="40" y="1550" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-70" value="获取触发器任务" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="_M9FTq-tC0Zpsm8EneUu-69" parent="1" source="_M9FTq-tC0Zpsm8EneUu-62">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="1590" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-71" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="_M9FTq-tC0Zpsm8EneUu-69" parent="1" target="_M9FTq-tC0Zpsm8EneUu-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="1666" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-72" value="FutureTask" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="40" width="90" height="2470" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-74" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-72">
+          <mxGeometry x="40" y="1690" width="10" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-75" value="若设置了超时时间，则异步线程处理" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="_M9FTq-tC0Zpsm8EneUu-74" parent="1" source="_M9FTq-tC0Zpsm8EneUu-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1390" y="1730" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-76" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="_M9FTq-tC0Zpsm8EneUu-74" parent="1" target="_M9FTq-tC0Zpsm8EneUu-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1390" y="1806" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-78" value="callback" style="html=1;verticalAlign=bottom;endArrow=block;entryX=1;entryY=0;" edge="1" target="_M9FTq-tC0Zpsm8EneUu-77" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1465" y="1820" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-79" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=1;exitY=0.95;entryX=1.171;entryY=0.539;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" source="_M9FTq-tC0Zpsm8EneUu-77" parent="1" target="_M9FTq-tC0Zpsm8EneUu-74">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="1877" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-81" value="没设置超时时间,直接执行" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="_M9FTq-tC0Zpsm8EneUu-80" parent="1" source="_M9FTq-tC0Zpsm8EneUu-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1110" y="2050" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-82" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="_M9FTq-tC0Zpsm8EneUu-80" parent="1" target="_M9FTq-tC0Zpsm8EneUu-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1110" y="2126" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
