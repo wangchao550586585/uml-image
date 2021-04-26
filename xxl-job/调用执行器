@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-25T15:11:13.377Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="Iy8cDcDDXvcPEs2O-WJa" version="14.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-26T01:06:04.053Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="i2CO-zrm6_-pE0XsR3ft" version="14.6.5" type="github">
   <diagram id="0cgJatRhZ-EVKrP__ub_" name="Page-1">
-    <mxGraphModel dx="1673" dy="934" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -84,16 +84,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="_M9FTq-tC0Zpsm8EneUu-14" value="XxlJobExecutor" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="570" y="40" width="100" height="2730" as="geometry" />
+          <mxGeometry x="570" y="40" width="120" height="2730" as="geometry" />
         </mxCell>
         <mxCell id="_M9FTq-tC0Zpsm8EneUu-36" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-14">
-          <mxGeometry x="40" y="290" width="10" height="80" as="geometry" />
+          <mxGeometry x="55" y="290" width="10" height="80" as="geometry" />
         </mxCell>
         <mxCell id="_M9FTq-tC0Zpsm8EneUu-53" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-14">
-          <mxGeometry x="40" y="1129" width="10" height="80" as="geometry" />
+          <mxGeometry x="55" y="1129" width="10" height="80" as="geometry" />
         </mxCell>
         <mxCell id="_M9FTq-tC0Zpsm8EneUu-56" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_M9FTq-tC0Zpsm8EneUu-14">
-          <mxGeometry x="40" y="1280" width="10" height="80" as="geometry" />
+          <mxGeometry x="55" y="1280" width="10" height="80" as="geometry" />
         </mxCell>
         <mxCell id="_M9FTq-tC0Zpsm8EneUu-17" value="JobThread" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="690" y="40" width="90" height="2870" as="geometry" />
@@ -117,6 +117,12 @@
           <mxGeometry width="60" relative="1" as="geometry">
             <mxPoint x="50" y="1490" as="sourcePoint" />
             <mxPoint x="110" y="1490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-96" value="加入回调队列" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;fontColor=#000000;" edge="1" parent="_M9FTq-tC0Zpsm8EneUu-17" target="_M9FTq-tC0Zpsm8EneUu-93">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="50" y="2210" as="sourcePoint" />
+            <mxPoint x="100" y="2210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="_M9FTq-tC0Zpsm8EneUu-19" value="GlueTypeEnum" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
@@ -251,6 +257,21 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1110" y="2126" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-89" value="" style="endArrow=classic;html=1;exitX=-0.182;exitY=0.899;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="_M9FTq-tC0Zpsm8EneUu-62" target="_M9FTq-tC0Zpsm8EneUu-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="2299" as="sourcePoint" />
+            <mxPoint x="630" y="2299" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="2200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-91" value="&lt;pre style=&quot;font-size: 10.5pt;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;空闲执行次数超过&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;courier new&amp;quot;, monospace;&quot;&gt;30&lt;/span&gt;&lt;span style=&quot;&quot;&gt;次&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;courier new&amp;quot;, monospace;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;&quot;&gt;且队列没任务&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;courier new&amp;quot;, monospace;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;&quot;&gt;则删除并终止线程&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="530" y="2160" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_M9FTq-tC0Zpsm8EneUu-93" value="TriggerCallbackThread" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1550" y="40" width="90" height="2470" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
