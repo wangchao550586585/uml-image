@@ -1,16 +1,16 @@
-<mxfile host="app.diagrams.net" modified="2021-06-23T00:44:37.679Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36" etag="wLUV9JBvPi-QHqP6rCvb" version="14.7.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-29T13:59:57.343Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36" etag="7G1OeQu0RrrSEWiQLzlt" version="14.8.2" type="github">
   <diagram id="eSVkzdZpoWZWEVfCEtMr" name="Page-1">
-    <mxGraphModel dx="868" dy="489" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1185" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="nBkmug785t0I9V3HvOl8-1" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;#34;courier new&amp;#34; ; font-size: 10.5pt&quot;&gt;ChatServer&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="nBkmug785t0I9V3HvOl8-1" value="ChatServer" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="40" y="50" width="100" height="730" as="geometry" />
         </mxCell>
-        <mxCell id="nBkmug785t0I9V3HvOl8-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="nBkmug785t0I9V3HvOl8-1">
+        <mxCell id="nBkmug785t0I9V3HvOl8-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="nBkmug785t0I9V3HvOl8-1" vertex="1">
           <mxGeometry x="45" y="120" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="nBkmug785t0I9V3HvOl8-3" value="run，等待客户&lt;br&gt;端连接" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="nBkmug785t0I9V3HvOl8-2" parent="nBkmug785t0I9V3HvOl8-1">
+        <mxCell id="nBkmug785t0I9V3HvOl8-3" value="run，等待客户&lt;br&gt;端连接。并启动handler" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" parent="nBkmug785t0I9V3HvOl8-1" target="nBkmug785t0I9V3HvOl8-2" edge="1">
           <mxGeometry x="0.0667" y="15" relative="1" as="geometry">
             <mxPoint x="45" y="100" as="sourcePoint" />
             <Array as="points">
@@ -19,13 +19,22 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nBkmug785t0I9V3HvOl8-6" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;#34;courier new&amp;#34; ; font-size: 10.5pt&quot;&gt;LoginResponseHandler&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="410" y="50" width="70" height="750" as="geometry" />
+        <mxCell id="nBkmug785t0I9V3HvOl8-6" value="LoginResponseHandler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="414" y="50" width="70" height="750" as="geometry" />
         </mxCell>
-        <mxCell id="nBkmug785t0I9V3HvOl8-7" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;#34;courier new&amp;#34; ; font-size: 10.5pt&quot;&gt;client&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="250" y="50" width="70" height="750" as="geometry" />
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="nBkmug785t0I9V3HvOl8-6">
+          <mxGeometry x="30" y="210" width="10" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="nBkmug785t0I9V3HvOl8-9" value="dispatch" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;" edge="1" parent="1" source="nBkmug785t0I9V3HvOl8-7" target="nBkmug785t0I9V3HvOl8-6">
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-11" value="异步线程处理登录逻辑" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;" edge="1" parent="nBkmug785t0I9V3HvOl8-6" target="m_D3JFcyWxnQa9ZbVN8y-9">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="36" y="430" as="sourcePoint" />
+            <mxPoint x="96" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nBkmug785t0I9V3HvOl8-7" value="client" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="230" y="50" width="70" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="nBkmug785t0I9V3HvOl8-9" value="建立连接，新建子channel并注入登录handler" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;" parent="1" source="nBkmug785t0I9V3HvOl8-7" target="nBkmug785t0I9V3HvOl8-6" edge="1">
           <mxGeometry width="60" relative="1" as="geometry">
             <mxPoint x="300" y="200" as="sourcePoint" />
             <mxPoint x="360" y="200" as="targetPoint" />
@@ -33,6 +42,73 @@
               <mxPoint x="340" y="250" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-3" value="dispatch" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="m_D3JFcyWxnQa9ZbVN8y-2" parent="1" source="nBkmug785t0I9V3HvOl8-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="300" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-4" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="m_D3JFcyWxnQa9ZbVN8y-2" parent="1" target="nBkmug785t0I9V3HvOl8-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="376" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-5" value="ServerSession" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="50" width="70" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="m_D3JFcyWxnQa9ZbVN8y-5">
+          <mxGeometry x="30" y="300" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-8" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;entryX=-0.317;entryY=0.553;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" source="m_D3JFcyWxnQa9ZbVN8y-6" parent="1" target="m_D3JFcyWxnQa9ZbVN8y-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="426" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-7" value="存储channel" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="m_D3JFcyWxnQa9ZbVN8y-6" parent="1" source="nBkmug785t0I9V3HvOl8-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="350" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-14" value="存储user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="m_D3JFcyWxnQa9ZbVN8y-9" target="m_D3JFcyWxnQa9ZbVN8y-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="560" />
+              <mxPoint x="680" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-18" value="&lt;span style=&quot;font-size: 11px&quot;&gt;和channel 通道实现双&lt;br&gt;向绑定，并设置登录状态。session存储全局sessionMap中&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="m_D3JFcyWxnQa9ZbVN8y-9" target="m_D3JFcyWxnQa9ZbVN8y-5">
+          <mxGeometry x="0.0574" y="-40" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="660" />
+              <mxPoint x="670" y="660" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-9" value="CallbackTaskScheduler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="50" width="70" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-20" value="注入心跳和chatRedirectHandler，删除loginHandler" style="html=1;verticalAlign=bottom;startArrow=circle;startFill=1;endArrow=open;startSize=6;endSize=8;" edge="1" parent="m_D3JFcyWxnQa9ZbVN8y-9" target="m_D3JFcyWxnQa9ZbVN8y-19">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="40" y="660" as="sourcePoint" />
+            <mxPoint x="120" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-12" value="User" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="50" width="70" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-13" value="解析成user" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;" edge="1" parent="1" source="m_D3JFcyWxnQa9ZbVN8y-9" target="m_D3JFcyWxnQa9ZbVN8y-12">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="780" y="500" as="sourcePoint" />
+            <mxPoint x="810" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="810" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-19" value="ChannelHandlerContext" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="50" width="70" height="750" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
