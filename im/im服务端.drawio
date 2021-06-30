@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-06-29T13:59:57.343Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36" etag="7G1OeQu0RrrSEWiQLzlt" version="14.8.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-30T13:02:12.963Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36" etag="cD8UChtgG6XVBX_QTG58" version="14.8.2" type="github">
   <diagram id="eSVkzdZpoWZWEVfCEtMr" name="Page-1">
-    <mxGraphModel dx="1185" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -87,7 +87,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="m_D3JFcyWxnQa9ZbVN8y-9" value="CallbackTaskScheduler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="720" y="50" width="70" height="750" as="geometry" />
+          <mxGeometry x="720" y="50" width="80" height="1100" as="geometry" />
         </mxCell>
         <mxCell id="m_D3JFcyWxnQa9ZbVN8y-20" value="注入心跳和chatRedirectHandler，删除loginHandler" style="html=1;verticalAlign=bottom;startArrow=circle;startFill=1;endArrow=open;startSize=6;endSize=8;" edge="1" parent="m_D3JFcyWxnQa9ZbVN8y-9" target="m_D3JFcyWxnQa9ZbVN8y-19">
           <mxGeometry width="80" relative="1" as="geometry">
@@ -96,7 +96,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="m_D3JFcyWxnQa9ZbVN8y-12" value="User" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="860" y="50" width="70" height="750" as="geometry" />
+          <mxGeometry x="860" y="50" width="70" height="1090" as="geometry" />
         </mxCell>
         <mxCell id="m_D3JFcyWxnQa9ZbVN8y-13" value="解析成user" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;" edge="1" parent="1" source="m_D3JFcyWxnQa9ZbVN8y-9" target="m_D3JFcyWxnQa9ZbVN8y-12">
           <mxGeometry width="60" relative="1" as="geometry">
@@ -108,7 +108,35 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="m_D3JFcyWxnQa9ZbVN8y-19" value="ChannelHandlerContext" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="1010" y="50" width="70" height="750" as="geometry" />
+          <mxGeometry x="1010" y="50" width="70" height="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="m_D3JFcyWxnQa9ZbVN8y-21" target="m_D3JFcyWxnQa9ZbVN8y-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1120" y="770" />
+              <mxPoint x="1120" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-23" value="反向通过channel获取session" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="m_D3JFcyWxnQa9ZbVN8y-22">
+          <mxGeometry x="-0.2061" y="-1" relative="1" as="geometry">
+            <mxPoint x="-14" y="-19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-21" value="ChatRedirectHandler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="50" width="80" height="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-24" value="ChatRedirectProcesser" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="50" width="80" height="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="m_D3JFcyWxnQa9ZbVN8y-25" value="异步消息转发" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;" edge="1" parent="1" source="m_D3JFcyWxnQa9ZbVN8y-21" target="m_D3JFcyWxnQa9ZbVN8y-24">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="1220" y="830" as="sourcePoint" />
+            <mxPoint x="1270" y="830" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1260" y="840" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
