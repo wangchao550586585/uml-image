@@ -1,1 +1,100 @@
-<mxfile host="app.diagrams.net" modified="2021-09-28T03:13:14.985Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" version="15.1.1" etag="d-3y68r5CjXmJHtskRFn" type="github"><diagram id="smkGM__hZhpnfu1cFHwY">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-09-28T03:46:26.330Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" etag="b3SUqVto6Ur9DGl9y2FT" version="15.1.1" type="github">
+  <diagram id="smkGM__hZhpnfu1cFHwY" name="Page-1">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-5" value="schedule" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="130" width="100" height="920" as="geometry" />
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="Mn9prHFw-CYW_cWOVekL-5">
+          <mxGeometry x="45" y="90" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-15" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="Mn9prHFw-CYW_cWOVekL-5">
+          <mxGeometry x="45" y="230" width="10" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-16" value="触发调度任务" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="Mn9prHFw-CYW_cWOVekL-15" parent="Mn9prHFw-CYW_cWOVekL-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="45" y="210" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="75" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-20" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="Mn9prHFw-CYW_cWOVekL-5">
+          <mxGeometry x="45" y="580" width="10" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-23" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="Mn9prHFw-CYW_cWOVekL-5">
+          <mxGeometry x="45" y="670" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-24" value="针对失败结果执行告警处理" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="Mn9prHFw-CYW_cWOVekL-23" parent="Mn9prHFw-CYW_cWOVekL-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="45" y="650" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="75" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-8" value="hancler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="130" width="90" height="910" as="geometry" />
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="Mn9prHFw-CYW_cWOVekL-8">
+          <mxGeometry x="40" y="350" width="10" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-17" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="Mn9prHFw-CYW_cWOVekL-8">
+          <mxGeometry x="40" y="580" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-18" value="因为触发器内部调用时间是无法控制的，所以这里异步调用。&lt;br&gt;执行完成后，通过回调线程通知调度中心执行结果。" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="Mn9prHFw-CYW_cWOVekL-17" parent="Mn9prHFw-CYW_cWOVekL-8" source="Mn9prHFw-CYW_cWOVekL-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="560" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="70" y="410" />
+              <mxPoint x="70" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-10" value="ip注册" style="html=1;verticalAlign=bottom;endArrow=block;entryX=1;entryY=0;" edge="1" target="Mn9prHFw-CYW_cWOVekL-9" parent="1" source="Mn9prHFw-CYW_cWOVekL-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="220" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-11" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=1;exitY=0.95;" edge="1" source="Mn9prHFw-CYW_cWOVekL-9" parent="1" target="Mn9prHFw-CYW_cWOVekL-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="277" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-13" value="执行调度" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="Mn9prHFw-CYW_cWOVekL-12" parent="1" source="Mn9prHFw-CYW_cWOVekL-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="310" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-14" value="返回调度结果" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="Mn9prHFw-CYW_cWOVekL-12" parent="1" target="Mn9prHFw-CYW_cWOVekL-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="386" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-19" value="回调返回调用结果" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1" target="Mn9prHFw-CYW_cWOVekL-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="740" as="sourcePoint" />
+            <mxPoint x="490" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-25" value="注册中心" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="180" y="240" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-26" value="调度" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="460" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-27" value="rpc" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="205" y="490" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-28" value="告警" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="195" y="780" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Mn9prHFw-CYW_cWOVekL-29" value="记录执行结果日志" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="600" width="110" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
